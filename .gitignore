@@ -259,5 +259,5 @@ dmypy.json
 
 # profiling data
 .prof
-
+.mp4
 # End of https://www.toptal.com/developers/gitignore/api/linux,pycharm+all,git,python

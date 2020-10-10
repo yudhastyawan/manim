@@ -65,4 +65,5 @@ class Test(YScene):
 
 if __name__ == '__main__':
     test = Test()
+    print(os.getcwd())
     YRender(test,active_preview=True)
