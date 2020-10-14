@@ -1,6 +1,6 @@
 from manimpp import *
 
-class Test(MovingCameraScene):
+class Anim1(MovingCameraScene):
     CONFIG = {
         "camera_config" : {
             "background_color" : cm.BLACK
@@ -55,4 +55,4 @@ class Test(MovingCameraScene):
         self.wait(3)
 
 if __name__ == '__main__':
-    YRender(Test,active_preview=True)
+    YRender(Anim1,active_preview=True)
