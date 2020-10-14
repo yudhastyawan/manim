@@ -54,8 +54,12 @@ class YAxes(Axes):
         self.y_max = ymax
         if x_axis_width == None:
             self.x_axis_width = xmax - xmin
+        else:
+            self.x_axis_width = x_axis_width
         if y_axis_width == None:
             self.y_axis_width = ymax - ymin
+        else:
+            self.y_axis_width = y_axis_width
         self.axis_config = {
             "color": axes_color,
             "include_tip": include_tip,
