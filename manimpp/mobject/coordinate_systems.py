@@ -186,13 +186,13 @@ class Axes(VGroup, CoordinateSystem):
     def get_axes(self):
         return self.axes
 
-    def get_coordinate_labels(self, x_vals=None, y_vals=None, **kwargs):
+    def get_coordinate_labels(self, x_vals=None, y_vals=None, scale_val=None,**kwargs):
         if x_vals is None:
             x_vals = []
         if y_vals is None:
             y_vals = []
-        x_mobs = self.get_x_axis().get_number_mobjects(*x_vals, **kwargs)
-        y_mobs = self.get_y_axis().get_number_mobjects(*y_vals, **kwargs)
+        x_mobs = self.get_x_axis().get_number_mobjects(*x_vals, scale_val=scale_val, **kwargs)
+        y_mobs = self.get_y_axis().get_number_mobjects(*y_vals, scale_val=scale_val, **kwargs)
 
         self.coordinate_labels = VGroup(x_mobs, y_mobs)
         return self.coordinate_labels

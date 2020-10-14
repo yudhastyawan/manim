@@ -86,6 +86,7 @@ from manimpp.yobjects.yrender import *
 from manimpp.yobjects.ycolormap import *
 from manimpp.yobjects.yscene.yscene import *
 from manimpp.yobjects.ymobject.ycoordinate_systems import *
+from manimpp.yobjects.ymobject.ynumber_line import *
 
 # Non manim libraries that are also nice to have without thinking
 

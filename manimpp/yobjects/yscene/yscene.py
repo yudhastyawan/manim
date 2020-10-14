@@ -15,6 +15,7 @@ from manimpp.mobject.mobject import Mobject
 from manimpp.scene.scene_file_writer import SceneFileWriter
 from manimpp.utils.iterables import list_update
 from manimpp.scene.scene import *
+from manimpp.scene.moving_camera_scene import *
 
 class YScene(Scene):
     CONFIG = {
@@ -28,11 +29,6 @@ class YScene(Scene):
         "end_at_animation_number": None,
         "leave_progress_bars": False,
     }
-
-    def setBackgroundColor(self,cm):
-        self.camera_config = {
-            "background_color": background_color,
-        }
 
     def setBackgroundColor(self,cm):
         self.camera_config = {
